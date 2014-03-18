@@ -1,0 +1,45 @@
+﻿@model PetStore.Models.Pet
+
+@{
+    ViewBag.Title = "View";
+}
+
+
+<table class="table">
+        <tr>
+            <td rowspan="2"></td>
+            <td nowrap>
+                <h4>@Html.DisplayFor(model => model.Animal)</h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <dl>
+                @Html.DisplayFor(model => model.Description)
+                <dt>
+                    @Html.DisplayNameFor(model => model.DateReceieved)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DateReceieved)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Quantity)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Quantity)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+            </dl>
+            </td>
+        </tr>
+</table>

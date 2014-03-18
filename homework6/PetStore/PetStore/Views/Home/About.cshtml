@@ -1,0 +1,18 @@
+﻿@model IEnumerable<PetStore.Models.Pet>
+
+@{
+    ViewBag.Title = "Inventory";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+
+<table class="table">
+    @foreach (var item in Model)
+    {
+        <tr>
+        <td>@Html.DisplayFor(modelItem => item.Animal)</td>
+        <td>@Html.DisplayFor(modelItem => item.Description)</td>
+        </tr>
+    }
+</table>
