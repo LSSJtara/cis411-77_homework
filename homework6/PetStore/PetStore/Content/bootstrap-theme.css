@@ -1577,6 +1577,25 @@ table th[class*="col-"] {
 .table > tfoot > tr.danger > th {
   background-color: #f2dede;
 }
+
+.table > tbody > tr > td.wordB {
+    vertical-align: bottom;
+    height: 25%;
+    padding-bottom: 0px;
+}
+
+.table > tbody > tr > td.petDesc {
+    width: 40%;
+}
+
+.table > tbody > tr > td.petImg {
+    width: 30%;
+}
+
+.noMB {
+    margin-bottom: 0px;
+}
+
 .table-hover > tbody > tr > td.danger:hover,
 .table-hover > tbody > tr > th.danger:hover,
 .table-hover > tbody > tr.danger:hover > td,

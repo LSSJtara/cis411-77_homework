@@ -17,10 +17,26 @@
         @Html.ValidationSummary(true)
 
         <div class="form-group">
+            @Html.LabelFor(model => model.ImageURL, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ImageURL)
+                @Html.ValidationMessageFor(model => model.ImageURL)
+            </div>
+        </div>
+
+        <div class="form-group">
             @Html.LabelFor(model => model.Animal, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Animal)
                 @Html.ValidationMessageFor(model => model.Animal)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ShortDescription, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ShortDescription)
+                @Html.ValidationMessageFor(model => model.ShortDescription)
             </div>
         </div>
 

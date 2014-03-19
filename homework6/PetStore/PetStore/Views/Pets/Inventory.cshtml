@@ -10,14 +10,14 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td rowspan="2"></td>
-            <td nowrap>
-                <h4>@Html.DisplayFor(modelItem => item.Animal)</h4>
+            <td class="petImg" rowspan="2"><img src="@Html.DisplayFor(modelItem => item.ImageURL)"></td>
+            <td class="wordB">
+                <h3 class="noMB">@Html.DisplayFor(modelItem => item.Animal)</h3>
             </td>
         </tr>
         <tr>
             <td>
-                <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                <p class="text-justify">@Html.DisplayFor(modelItem => item.ShortDescription)</p>
                 @Html.ActionLink("View", "ViewPet", new { id = item.ID })
             </td>
         </tr>

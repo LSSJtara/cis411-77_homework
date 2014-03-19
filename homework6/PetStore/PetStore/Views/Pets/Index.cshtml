@@ -34,8 +34,8 @@
         <td>
             @Html.DisplayFor(modelItem => item.Animal)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
+        <td class="petDesc">
+            <p class="text-justify">@Html.DisplayFor(modelItem => item.Description)</p>
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DateReceieved)
@@ -46,7 +46,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Price)
         </td>
-        <td>
+        <td class="actions">
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
