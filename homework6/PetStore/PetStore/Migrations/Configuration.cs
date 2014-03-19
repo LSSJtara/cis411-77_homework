@@ -22,7 +22,7 @@ namespace PetStore.Migrations
                     Animal = "Cat",
                     ShortDescription = "this is a cat",
                     Description = "this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat ",
-                    DateReceieved = DateTime.Parse("2014-1-11"),
+                    DateReceived = DateTime.Parse("2014-1-11"),
                     Quantity = 6,
                     Price = 7.99M
                 },
@@ -33,7 +33,7 @@ namespace PetStore.Migrations
                     Animal = "Dog",
                     ShortDescription = "this is a dog",
                     Description = "this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat this is a cat ",
-                    DateReceieved = DateTime.Parse("2014-3-15"),
+                    DateReceived = DateTime.Parse("2014-3-15"),
                     Quantity = 8,
                     Price = 9.99M
                 }

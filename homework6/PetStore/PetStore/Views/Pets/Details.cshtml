@@ -9,6 +9,7 @@
 <div>
     <h4>Pet</h4>
 	<hr />
+    <img class="smImg" src="@Html.DisplayFor(model => model.ImageURL)" />
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Animal)
@@ -16,6 +17,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.Animal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShortDescription)
         </dd>
 
         <dt>
@@ -27,11 +36,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DateReceieved)
+            @Html.DisplayNameFor(model => model.DateReceived)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DateReceieved)
+            @Html.DisplayFor(model => model.DateReceived)
         </dd>
 
         <dt>

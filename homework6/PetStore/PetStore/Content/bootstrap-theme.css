@@ -1592,6 +1592,14 @@ table th[class*="col-"] {
     width: 30%;
 }
 
+.table > tbody > tr > td.smPetImg {
+    width: 10%;
+}
+
+img.smImg {
+    width: 30%;
+}
+
 .noMB {
     margin-bottom: 0px;
 }

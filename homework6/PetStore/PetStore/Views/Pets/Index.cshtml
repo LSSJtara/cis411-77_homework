@@ -12,13 +12,16 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.ImageURL)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Animal)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Description)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DateReceieved)
+            @Html.DisplayNameFor(model => model.DateReceived)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Quantity)
@@ -31,6 +34,9 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td class="smPetImg">
+            <img src="@Html.DisplayFor(modelItem => item.ImageURL)" />
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Animal)
         </td>
@@ -38,7 +44,7 @@
             <p class="text-justify">@Html.DisplayFor(modelItem => item.Description)</p>
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DateReceieved)
+            @Html.DisplayFor(modelItem => item.DateReceived)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Quantity)
@@ -47,8 +53,8 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td class="actions">
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID })
+            @Html.ActionLink("Details", "Details", new { id=item.ID })
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
     </tr>
