@@ -354,6 +354,8 @@ aside {
     #loginForm input[type="button"],
     #loginForm button {
         width: auto;
+        color: white;
+        background: #149c82;
     }
 
 #socialLoginForm {
@@ -446,8 +448,6 @@ textarea {
     input[type="submit"],
     input[type="button"],
     button {
-        background-color: #d3dce0;
-        border: 1px solid #787878;
         cursor: pointer;
         font-size: 1.2em;
         font-weight: 600;
@@ -798,12 +798,23 @@ li {
     padding: 5px; 
     color: #666;
     border-style: dashed;
-    border-width: 2px;
-    border-color: #666;
+    border-width: 3px;
+    border-color: #149c82;
 }
 
 #update-products li .item {
 	width: 120px;
 	display: inline-block;
 	text-align: right;
-} 
+}
+
+.btn {
+    background-color: #149c82;
+    color: white;
+    border: none;
+}
+
+.center {
+    position: relative;
+    left: 32%;
+}
