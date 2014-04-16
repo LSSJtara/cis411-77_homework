@@ -800,6 +800,7 @@ li {
     border-style: dashed;
     border-width: 3px;
     border-color: #149c82;
+    margin-top: 15px;
 }
 
 #update-products li .item {
