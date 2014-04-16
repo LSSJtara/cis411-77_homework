@@ -762,17 +762,17 @@ li {
         
 #products li {
     width: 300px;
-    background-color: #aaf;
+    background-color: #D8D8D8;
     font-size: 1.5em;
     font-weight: bold;
-    color: #ff0;
+    color: #0B4C5F;
     margin: 0 0 5px 0;
     padding: 0 5px 0 5px;
 }
         
 .price  {
     float: right;
-    color: #c00;
+    color: #848484;
     font-size: 0.75em;
 }
         
