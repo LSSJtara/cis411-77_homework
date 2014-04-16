@@ -19,7 +19,7 @@ a {
     outline: none;
     padding-left: 3px;
     padding-right: 3px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
     a:link, a:visited,
@@ -324,7 +324,6 @@ aside {
 
 /* login page */
 #loginForm {
-    border-right: solid 2px #c8c8c8;
     float: left;
     width: 55%;
 }
@@ -818,4 +817,8 @@ li {
 .center {
     position: relative;
     left: 32%;
+}
+
+tr {
+    border-bottom: solid 1px #000;
 }
