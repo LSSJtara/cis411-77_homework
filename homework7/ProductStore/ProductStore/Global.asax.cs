@@ -23,6 +23,7 @@ namespace ProductStore
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+            System.Data.Entity.Database.SetInitializer(new ProductStore.Models.OrdersContextInitializer());
         }
     }
 }
