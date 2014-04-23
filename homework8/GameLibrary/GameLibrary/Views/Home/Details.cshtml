@@ -1,0 +1,42 @@
+﻿@model GameLibrary.Models.Game
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h1>Details</h1>
+
+<fieldset>
+    <legend>Game</legend>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <img class="detailImg" src="@Html.DisplayFor(model => model.ImageURL)">
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.Title) <span>@Html.DisplayFor(model => model.Title)</span></h3>
+                </div>
+
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.System) <span>@Html.DisplayFor(model => model.System)</span></h3>
+                </div>
+
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.Genre) <span>@Html.DisplayFor(model => model.Genre)</span></h3>
+                </div>
+
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.Year) <span>@Html.DisplayFor(model => model.Year)</span></h3>
+                </div>
+
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.UserName) <span>@Html.DisplayFor(model => model.UserName)</span></h3>
+                </div>
+            </td>
+        </tr>
+    </table>
+</fieldset>

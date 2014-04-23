@@ -1,0 +1,70 @@
+﻿@model GameLibrary.Models.Game
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h1>Create</h1>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Game</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImageURL)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ImageURL)
+            @Html.ValidationMessageFor(model => model.ImageURL)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Title)
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.System)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.System)
+            @Html.ValidationMessageFor(model => model.System)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Genre)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Genre)
+            @Html.ValidationMessageFor(model => model.Genre)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Year)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Year)
+            @Html.ValidationMessageFor(model => model.Year)
+        </div>
+
+        @Html.HiddenFor(model => model.UserName)
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

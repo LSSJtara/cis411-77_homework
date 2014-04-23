@@ -1,0 +1,50 @@
+﻿@model GameLibrary.Models.Game
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Game</legend>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <img class="detailImg" src="@Html.DisplayFor(model => model.ImageURL)">
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.Title) <span>@Html.DisplayFor(model => model.Title)</span></h3>
+                </div>
+
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.System) <span>@Html.DisplayFor(model => model.System)</span></h3>
+                </div>
+
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.Genre) <span>@Html.DisplayFor(model => model.Genre)</span></h3>
+                </div>
+
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.Year) <span>@Html.DisplayFor(model => model.Year)</span></h3>
+                </div>
+
+                <div>
+                    <h3>@Html.DisplayNameFor(model => model.UserName) <span>@Html.DisplayFor(model => model.UserName)</span></h3>
+                </div>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

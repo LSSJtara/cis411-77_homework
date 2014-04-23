@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+@section scripts{
+    @Scripts.Render("~/Scripts/jquery.dataTables.min.js")
+}
+
+<script type="text/javascript">
+    // Using datatable jQuery plugin to manage search/sort feature on main page.
+    $(document).ready(function () {
+
+        $('#usertable').dataTable({
+            sPaginationType: "full_numbers"
+        });
+
+    });
+
+
+</script>
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>GameLibrary.</h1>
+                <h2>Home Page</h2>
+            </hgroup>
+            <p>
+                On GameLibrary, you can list and share all of the games you own while also being able to view other user's games.
+                Add every game you own or just your favorites! Click register to sign up and start adding games to your profile.
+            </p>
+        </div>
+    </section>
+}
+<h1>List of Users</h1>
+<table id="usertable">
+    <thead>
+        <tr>
+            <th></th>
+            <th>User Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td class="smgameIcon"><img src="../Images/smgameIcon.png" /></td>
+                <td>@user.UserName</td>
+                <td class="smallTxt">@Html.ActionLink("View", "ViewProfile", new {name = user.UserName })</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+
